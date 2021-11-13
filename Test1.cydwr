@@ -11,6 +11,7 @@
       <Data key="58a8448c-7741-40e2-86fa-3223f6572559/65f3af6c-759b-4ccb-8c66-5c95ba1f5f4f" value="UART_tx" />
       <Data key="58a8448c-7741-40e2-86fa-3223f6572559/b7e8018e-1ef7-49c0-b5a5-61641a03e31c" value="UART_rx" />
       <Data key="72a8a57d-5084-4550-ab25-34088938842f" value="BLUE" />
+      <Data key="209c9250-182c-4ddf-8d8a-5c144b26c838" value="BLUE" />
       <Data key="a61270bc-07ec-447d-ac9e-34cfe85c30e9" value="RED" />
       <Data key="d5e3d9a9-cb99-4cbb-b318-c57647345a5d/4db2e9d3-9f70-4f4e-a919-7eefada41863" value="CapSense_Cmod" />
       <Data key="d5e3d9a9-cb99-4cbb-b318-c57647345a5d/8ed50244-d239-4c9b-9207-b8e71ce193dc" value="CapSense_Tx" />
@@ -23,6 +24,7 @@
       <Data key="e6de21d3-5eea-48dd-89fe-8c18bb9d3322/77fd7f86-2082-41fa-a471-914d5f07502d" value="CapSense_Rx" />
       <Data key="e6de21d3-5eea-48dd-89fe-8c18bb9d3322/2605f567-73b7-435d-b3b9-174766b96934" value="CapSense_CintA" />
       <Data key="e6de21d3-5eea-48dd-89fe-8c18bb9d3322/dbc12ae1-a607-4701-99cc-6261716a9147" value="CapSense_CintB" />
+      <Data key="ea3298d7-699b-45e7-8b26-39b6d0b89a53" value="GREEN" />
       <Data key="f94f1599-b82f-4598-bb32-eb09fff190e1" value="GREEN" />
     </Group>
   </Group>
@@ -636,6 +638,11 @@
         <Data key="Port Format" value="11,1" />
       </Group>
     </Group>
+    <Group key="209c9250-182c-4ddf-8d8a-5c144b26c838">
+      <Group key="0">
+        <Data key="Port Format" value="11,1" />
+      </Group>
+    </Group>
     <Group key="a61270bc-07ec-447d-ac9e-34cfe85c30e9">
       <Group key="0">
         <Data key="Port Format" value="0,3" />
@@ -712,6 +719,11 @@
     <Group key="e6de21d3-5eea-48dd-89fe-8c18bb9d3322/dbc12ae1-a607-4701-99cc-6261716a9147">
       <Group key="0">
         <Data key="Port Format" value="7,2" />
+      </Group>
+    </Group>
+    <Group key="ea3298d7-699b-45e7-8b26-39b6d0b89a53">
+      <Group key="0">
+        <Data key="Port Format" value="1,1" />
       </Group>
     </Group>
     <Group key="f94f1599-b82f-4598-bb32-eb09fff190e1">

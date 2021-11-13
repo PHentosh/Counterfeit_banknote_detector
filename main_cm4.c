@@ -25,9 +25,10 @@ int main(void)
     {
         if(!CapSense_IsBusy()){
             CapSense_ProcessAllWidgets();
-            Cy_GPIO_Write(RED_PORT, RED_NUM, 0);
             if(CapSense_IsWidgetActive(CapSense_BUTTON0_WDGT_ID)){
                 Cy_GPIO_Write(BLUE_PORT, BLUE_NUM, 0);
+                Cy_GPIO_Write(GREEN_PORT, GREEN_NUM,1);
+                Cy_GPIO_Write(RED_PORT, RED_NUM, 1);
                 i = 0;
             }
             if(CapSense_IsWidgetActive(CapSense_BUTTON1_WDGT_ID)){
@@ -35,11 +36,17 @@ int main(void)
                 i = 1;
             }
             
-            if (i == 1){
-                inp = Cy_GPIO_Read(INP_PORT, INP_NUM);
-            }
-            if(inp!=0){
-                Cy_GPIO_Write(RED_PORT, RED_NUM, 1);
+            inp = Cy_GPIO_Read(INP_PORT, INP_NUM);
+            
+            if (i==1){
+
+                if(inp==1){
+                    Cy_GPIO_Write(RED_PORT, RED_NUM, 0);
+                    Cy_GPIO_Write(GREEN_PORT, GREEN_NUM,1);
+                } else{
+                    Cy_GPIO_Write(GREEN_PORT, GREEN_NUM,0);
+                    Cy_GPIO_Write(RED_PORT, RED_NUM, 1);
+                }
             }
             inp = 0;
             CapSense_UpdateAllBaselines();
